@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Notifications;
+namespace vanchinh1989\larausers\App\Notifications;
 
 use Illuminate\Auth\Notifications\ResetPassword as Notification;
 use Illuminate\Notifications\Messages\MailMessage;

@@ -1,15 +1,15 @@
 ## Create API Routes
+Copy above code to routes/api.php
 ```
-use Illuminate\Support\Facades\Route;
 use vanchinh1989\larausers\App\Http\Controllers\UsersController;
 
 Route::group([
     'prefix' => 'user'
 ], function ($router) {
-    Route::get('/', [UsersController::class, "index"]);
-    Route::post('/create', [UsersController::class, "store"]);
-    Route::get('/detail/{id}', [UsersController::class, "show"]);
-    Route::post('/update/{id}', [UsersController::class, "update"]);
-    Route::delete('/delete/{id}', [UsersController::class, "destroy"]);
+    Route::get('', [UsersController::class, "index"]);
+    Route::post('', [UsersController::class, "store"]);
+    Route::get('{id}', [UsersController::class, "show"]);
+    Route::post('{id}', [UsersController::class, "update"]);
+    Route::delete('{id}', [UsersController::class, "destroy"]);
 });
 ```

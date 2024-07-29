@@ -8,7 +8,7 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use App\Models\Profile;
+use vanchinh1989\larausers\App\Models\Profile;
 use App\Models\User;
 
 class UsersController extends Controller

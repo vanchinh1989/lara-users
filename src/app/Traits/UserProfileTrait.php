@@ -2,8 +2,8 @@
 
 namespace vanchinh1989\larausers\App\Traits;
 
-use App\Models\Profile;
-use App\Notifications\ResetPasswordNotification;
+use vanchinh1989\larausers\App\Models\Profile;
+use vanchinh1989\larausers\App\Notifications\ResetPasswordNotification;
 
 trait UserProfileTrait
 {
@@ -17,7 +17,7 @@ trait UserProfileTrait
      */
     public function profile()
     {
-        return $this->hasOne(\App\Models\Profile::class);
+        return $this->hasOne(\vanchinh1989\larausers\App\Models\Profile::class);
     }
 
     /**
@@ -25,7 +25,7 @@ trait UserProfileTrait
      */
     public function profiles()
     {
-        return $this->belongsToMany(\App\Models\Profile::class)->withTimestamps();
+        return $this->belongsToMany(\vanchinh1989\larausers\App\Models\Profile::class)->withTimestamps();
     }
 
     /**

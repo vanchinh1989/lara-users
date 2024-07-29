@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use vanchinh1989\larausers\App\Http\Requests\UpdateUserPasswordRequest;
 use vanchinh1989\larausers\App\Http\Requests\UpdateUserProfile;
-use App\Models\Profile;
+use vanchinh1989\larausers\App\Models\Profile;
 use vanchinh1989\larausers\App\Traits\CaptureIpTrait;
 use Image;
 use vanchinh1989\larausers\App\Http\Requests\DeleteUserAccount;
