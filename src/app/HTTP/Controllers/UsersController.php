@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use App\Models\Profile;
+use App\Models\User;
 
 class UsersController extends Controller
 {
@@ -26,7 +27,14 @@ class UsersController extends Controller
      */
     public function index()
     {
+        $paginationEnabled = true;
+        if ($paginationEnabled) {
+            $users = User::paginate(20);
+        } else {
+            $users = User::all();
+        }
 
+        return response()->json($users);
     }
 
     /**

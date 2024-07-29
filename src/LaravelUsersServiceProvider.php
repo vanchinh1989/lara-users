@@ -17,7 +17,7 @@ class LaravelUsersServiceProvider extends PackageServiceProvider
             ->hasTranslations()
             ->hasAssets()
             ->hasRoute('api')
-            ->hasMigration('create_profiles_table')
+            ->hasMigrations(['create_users_table','create_profiles_table'])
             ->hasInstallCommand(function(InstallCommand $command) {
                 $command
                     ->publishConfigFile()
