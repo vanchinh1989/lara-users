@@ -1,0 +1,13 @@
+{
+    
+    "messages": {
+        "create-success": "Create success",
+        "delete-success": "Delete success",
+        "cannot-delete-yourself" : "Can not delete your self",
+        "update-success": "Update success",
+        "not-your-profile": "This is not the profile you are looking for.",
+        "success-user-account-deleted": "Your account has been deleted",
+        "confirm-delete-required": "Confirm Account Deletion is required",
+        "error-delete-not-your": "You can only delete your own profile"
+    }
+}

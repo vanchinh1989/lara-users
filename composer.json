@@ -11,20 +11,36 @@
         }
     ],
     "require": {
-        "php": ">=8.3.0"
+        "php": ">=8.2.0|^8.3",
+        "intervention/image": "dev-develop",
+        "laravel/sanctum": "4.x-dev",
+        "spatie/laravel-package-tools": "dev-main"
     },
     "autoload": {
         "psr-4": {
-            "vanchinh1989\\larausers\\": "src/"
+            "vanchinh1989\\larausers\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "vanchinh1989\\larausers\\Test\\": "tests/"
+            "vanchinh1989\\larausers\\Test\\": "tests"
         }
+    },
+    "require-dev": {
+        "illuminate/support": "^11.18",
+        "laravel/laravel": "^11.1",
+        "laravel/tinker": "^2.9",
+        "orchestra/testbench": "^9.2"
     },
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "vanchinh1989\\larausers\\LaravelUsersServiceProvider"
+            ]
+        }
+    }
 }
