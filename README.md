@@ -1,12 +1,5 @@
-<?php
-
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-*/
-
+## Create API Routes
+```
 use Illuminate\Support\Facades\Route;
 use vanchinh1989\larausers\App\Http\Controllers\UsersController;
 
@@ -19,3 +12,4 @@ Route::group([
     Route::post('/update/{id}', [UsersController::class, "update"]);
     Route::delete('/delete/{id}', [UsersController::class, "destroy"]);
 });
+```

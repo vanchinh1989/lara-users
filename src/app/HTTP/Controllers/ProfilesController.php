@@ -157,7 +157,9 @@ class ProfilesController extends Controller
 
         $user->save();
 
-        return redirect('profile/'.$user->name.'/edit')->with('success', trans('profile.updateAccountSuccess'));
+        return response()->json([
+            'message' => trans('update-success')
+        ]);
     }
 
     /**
