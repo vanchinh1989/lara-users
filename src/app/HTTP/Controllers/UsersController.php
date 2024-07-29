@@ -53,14 +53,14 @@ class UsersController extends Controller
         ];
 
         $messages = [
-            'name.unique'         => trans('laravelusers::laravelusers.messages.userNameTaken'),
-            'name.required'       => trans('laravelusers::laravelusers.messages.userNameRequired'),
-            'name'                => trans('laravelusers::laravelusers.messages.userNameInvalid'),
-            'email.required'      => trans('laravelusers::laravelusers.messages.emailRequired'),
-            'email.email'         => trans('laravelusers::laravelusers.messages.emailInvalid'),
-            'password.required'   => trans('laravelusers::laravelusers.messages.passwordRequired'),
-            'password.min'        => trans('laravelusers::laravelusers.messages.PasswordMin'),
-            'password.max'        => trans('laravelusers::laravelusers.messages.PasswordMax'),
+            'name.unique'         => trans('messages.userNameTaken'),
+            'name.required'       => trans('messages.userNameRequired'),
+            'name'                => trans('messages.userNameInvalid'),
+            'email.required'      => trans('messages.emailRequired'),
+            'email.email'         => trans('messages.emailInvalid'),
+            'password.required'   => trans('messages.passwordRequired'),
+            'password.min'        => trans('messages.PasswordMin'),
+            'password.max'        => trans('messages.PasswordMax'),
         ];
 
         $validator = Validator::make($request->all(), $rules, $messages);

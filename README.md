@@ -1,5 +1,10 @@
 ## Create API Routes
-Copy above code to routes/api.php
+# How to install package?
+```
+composer require vanchinh1989/lara-users
+```
+
+# Copy above code to routes/api.php
 ```
 use vanchinh1989\larausers\App\Http\Controllers\UsersController;
 
