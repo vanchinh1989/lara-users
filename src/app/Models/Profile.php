@@ -29,8 +29,13 @@ class Profile extends Model
      */
     protected $fillable = [
         'address',
-        'bio',
+        'zipcode',
+        'prefecture_id',
+        'country_id',
+        'gender',
+        'dob',
         'avatar',
+        'description'
     ];
 
     /**
