@@ -1,4 +1,6 @@
-## Create API Routes
+## Laravel User Profile
+This packages used for model User
+
 # How to install package?
 ```
 composer require vanchinh1989/lara-users
