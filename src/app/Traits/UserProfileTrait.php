@@ -5,6 +5,9 @@ namespace vanchinh1989\larausers\App\Traits;
 use vanchinh1989\larausers\App\Models\Profile;
 use vanchinh1989\larausers\App\Notifications\ResetPasswordNotification;
 
+/**
+ * Used for Model of User
+ */
 trait UserProfileTrait
 {
     public function sendPasswordResetNotification($token)

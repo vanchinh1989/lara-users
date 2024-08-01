@@ -12,9 +12,14 @@ return new class extends Migration
             //Structure
             $table->increments('id');
             $table->unsignedBigInteger('user_id')->unsigned()->index();
-            $table->string('address')->nullable();
-            $table->text('bio')->nullable();
+            $table->text('dob')->nullable()->comment('Date of birth');
             $table->string('avatar')->nullable();
+            $table->tinyInteger('gender')->nullable();
+            $table->string('zipcode')->nullable();
+            $table->bigInteger('prefecture_id')->nullable()->comment('Prefectures of country');
+            $table->bigInteger('country_id')->nullable()->comment('Country');
+            $table->string('address')->nullable();
+            $table->string('description')->nullable();
             $table->timestamps();
 
             //Relationships
